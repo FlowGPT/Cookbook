@@ -1,0 +1,42 @@
+# PAL Models
+
+PAL stands for Program-Aided Language Models. It is a new method for training large language models (LLMs) to solve arithmetic and symbolic reasoning tasks. PAL works by first decomposing the problem into a sequence of steps, and then generating code for each step. The code is then executed by a runtime environment, such as a Python interpreter. This approach has several advantages over traditional methods for training LLMs. First, it allows LLMs to solve more complex problems. Second, it is more efficient, since the code is executed by a runtime environment, rather than by the LLM itself. Third, it is more flexible, since the LLM can be reused to solve different problems, without the need to retrain it.
+
+## Example
+
+To illustrate how PAL works, let's consider the following problem:
+
+- The bakers at the Beverly Hills Bakery baked 200 loaves of bread on Monday morning. They sold 93 loaves in the morning and 39 loaves in the afternoon. A grocery store returned 6 unsold loaves. How many loaves of bread did they have left?
+
+A traditional approach to solving this problem would be to use a chain-of-thought prompt. This would involve generating a sequence of text that describes the steps involved in solving the problem. For example, the following chain-of-thought prompt could be used to solve the above problem:
+
+```
+What is the total number of loaves of bread that the bakers baked?
+What is the number of loaves of bread that the bakers sold in the morning?
+What is the number of loaves of bread that the bakers sold in the afternoon?
+What is the number of loaves of bread that the grocery store returned?
+What is the total number of loaves of bread that the bakers have left?
+```
+
+The LLM would then be asked to generate a response to each prompt. The responses would then be combined to form a final answer. In this case, the final answer would be 74.
+
+The PAL approach is different. Instead of generating a chain-of-thought prompt, the PAL approach generates a code prompt. A code prompt is a sequence of text that describes the steps involved in solving the problem, but it also includes code that can be executed by a runtime environment. For example, the following code prompt could be used to solve the above problem:
+
+```
+def solve(baked_loaves, sold_in_morning, sold_in_afternoon, returned_loaves):
+  total_sold = sold_in_morning + sold_in_afternoon
+  total_loaves = baked_loaves - total_sold + returned_loaves
+  return total_loaves
+
+print(solve(200, 93, 39, 6))
+```
+
+The LLM would then be asked to generate a response to this prompt. The response would be a Python code snippet that implements the solve() function. The solve() function would then be executed by a Python interpreter, and the output of the function would be returned. In this case, the output of the function would be 74.
+
+## Advantages
+
+As mentioned above, PAL has several advantages over traditional methods for training LLMs. First, it allows LLMs to solve more complex problems. This is because the code prompt can be used to describe any sequence of steps, regardless of how complex they are. Second, PAL is more efficient. This is because the code is executed by a runtime environment, rather than by the LLM itself. The runtime environment is typically much faster than the LLM, so this can significantly improve the performance of the LLM. Third, PAL is more flexible. This is because the LLM can be reused to solve different problems, without the need to retrain it. The only thing that needs to be changed is the code prompt.
+
+## Conclusion
+
+PAL is a promising new method for training LLMs to solve arithmetic and symbolic reasoning tasks. It has several advantages over traditional methods, including the ability to solve more complex problems, the ability to be more efficient, and the ability to be more flexible

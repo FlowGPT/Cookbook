@@ -1,0 +1,47 @@
+# Self-Consistency
+
+Self-Consistency is a technique that allows a language model to generate multiple thought chains and then select the most consistent answer as the final result. This technique is complementary to Chain of Thought, which prompts the model to produce a series of short sentences that mimic a human's reasoning process.
+
+### How does Self-Consistency work?
+
+When a language model is prompted with a question, it first generates a number of different thought chains. Each thought chain is a possible solution to the question. The model then evaluates each thought chain and selects the one that is most consistent with the evidence.
+
+### Why is Self-Consistency important?
+
+Self-Consistency is important because it helps to improve the accuracy of the language model's answers. By generating multiple thought chains and selecting the most consistent one, the model is less likely to make mistakes.
+
+## Example:
+
+Consider the following multi-step reasoning problem:
+
+> Question: If a store has 10 apples and 8 oranges, and it sells 6 apples and 4 oranges, how many fruits are left in the store?
+
+>
+
+- Chain of Thought:
+
+>
+
+> 1. The store has 10 apples.
+> 2. The store sells 6 apples.
+> 3. The store has 4 apples left.
+> 4. The store has 8 oranges.
+> 5. The store sells 4 oranges.
+> 6. The store has 4 oranges left.
+> 7. The store has 4 + 4 = 8 fruits left.
+
+>
+
+- Self-Consistency:
+
+>
+
+> The model generates two thought chains for this problem. The first thought chain is shown above. The second thought chain is the same, except that the order of the steps is reversed.
+
+>
+
+> The model then evaluates both thought chains and selects the one that is most consistent with the evidence. In this case, both thought chains are consistent, so the model selects the first thought chain as the final answer.
+
+### Conclusion
+
+Self-Consistency is a powerful technique that can be used to improve the accuracy of language models. By generating multiple thought chains and selecting the most consistent one, the model is less likely to make mistakes.

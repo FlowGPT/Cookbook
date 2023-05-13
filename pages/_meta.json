@@ -1,0 +1,16 @@
+{
+  "index": "FlowGPT Documentation",
+  "1start": "Getting Started",
+  "2features": "Features",
+  "3support": "Support",
+  "4engineering": "Prompt Engineering Tutorial",
+
+  "contact": {
+    "title": "Social Media Platforms",
+    "type": "page",
+    "href": "https://linktr.ee/FlowGPT",
+    "newWindow": true
+  }
+
+  
+}

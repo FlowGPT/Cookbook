@@ -1,0 +1,132 @@
+# To Do and Not To Do
+
+When crafting prompts for AI, it is important to be clear about what you want the AI to do and what you do not want it to do. This can be done by using the following techniques:
+
+- **Use "do" and "not to do" statements.** This will help the AI understand your instructions more clearly. For example, instead of saying "Do not ask me what I am interested in," say "Recommend a movie to me without asking me for my interests."
+- **Use qualifiers.** Qualifiers are words or phrases that help to narrow down the scope of your request. For example, you could say "Recommend a movie from the top global trending movies to me."
+- **Use examples.** Providing examples can help the AI understand your request more clearly. For example, you could say "Recommend a movie like 'The Shawshank Redemption' to me."
+  It is also important to be aware of the limitations of AI. For example, AI cannot read your mind, so it is important to be specific in your requests. Additionally, AI is still under development, so it is not always able to generate perfect results. However, by following the tips above, you can improve the chances of getting the results you want.
+
+Here are some examples of prompts that use the techniques described above:
+
+**Less Effective Prompt:**
+
+`Recommend a movie to me.`
+
+**Better Prompt:**
+
+`Recommend a movie from the top global trending movies to me.`
+
+**Less Effective Prompt:**
+
+`Write a poem about love.`
+
+**Better Prompt:**
+
+`Write a poem about love that uses the following words: "heart," "soul," and "fire."`
+
+**Less Effective Prompt:**
+
+`Generate a code that will calculate the Fibonacci sequence.`
+
+**Better Prompt:**
+
+`Generate a code that will calculate the Fibonacci sequence up to the 100th term.`
+
+# Add Examples
+
+In some cases, it can be difficult to tell AI what you want it to do. This is especially true when you are trying to communicate a specific style or tone. In these cases, it can be helpful to add examples to your prompt.
+
+For example, let's say you want to generate a name for a superhero horse. You could simply ask AI to "suggest three names for a horse that is a superhero." However, this might not give you the results you want. AI might generate names like "Thunder Hooves" or "Captain Canter." While these names are not bad, they are not particularly creative or unique.
+
+To get better results, you could add some examples to your prompt. For example, you could say:
+
+```
+Suggest three names for a horse that is a superhero.
+
+Animal: Cat
+Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
+Animal: Dog
+Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
+```
+
+By adding these examples, you are giving AI a better idea of what you are looking for. The results you get will be more creative and unique.
+
+Here are some other tips for adding examples to your prompts:
+
+- Use as many examples as you can. The more examples you give AI, the better it will be able to understand what you want.
+- Make sure the examples are relevant to the task you are trying to complete. For example, if you are trying to generate a name for a superhero horse, make sure the examples you use are names of other superheroes.
+- Use a variety of examples. The more variety you have in your examples, the better AI will be able to learn from them.
+
+Adding examples to your prompts can be a great way to improve the results you get from AI.
+
+# Use specific Words
+
+In the code generation scenario, there is a small trick that can be used to improve the prompt. At the end of the prompt, add a **code bootstrap.** This tells the AI that you have finished describing the condition and that it can now start writing code.
+
+For example, the following prompt would generate a MySQL query for all students in the Computer Science Department:
+
+```
+Create a MySQL query for all students in the Computer Science Department:
+
+Table departments, columns = [DepartmentId, DepartmentName]
+Table students, columns = [DepartmentId, StudentId, StudentName]
+
+SELECT
+```
+
+The addition of the **SELECT** keyword at the end of the prompt is a good indication to the AI that it should generate SQL code.
+
+The same technique can be used to generate Python code. In this case, the **import** keyword would be a good hint. However, it is important to note that this only tells the AI that it can write code, and it does not tell the AI what kind of code to write. You will still need to add a prompt to the prompt to tell the AI what language code to generate.
+
+This technique is also mentioned in Ng Ng's ChatGPT Prompt Engineering course. However, in the course, the guide word is not placed at the end of the prompt, but directly explained in the prompt. This allows the AI to generate JSON-formatted content. The example in the course looks like this (note that this is Python code):
+
+```
+Generate a list of three made-up book titles along \
+with their authors and genres.
+Provide them in JSON format with the following keys:
+book_id, title, author, genre.
+```
+
+In this example, the **JSON** keyword is used to tell the AI that it should generate JSON-formatted content. The **book_id**, **title**, **author**, and **genre** keywords are used to tell the AI the names of the keys that should be used in the JSON object.
+
+It is important to note that the key to using guide words is to explain to the AI in the prompt what kind of content you want it to generate. By doing this, you can improve the accuracy and quality of the output.
+
+# Add Roles or Characters
+
+I will introduce a more effective trick: adding role-related content to the prompt so that the AI-generated content is more suitable for your needs.
+
+For example, in the above rewrite example, I added this paragraph before the example:
+
+`You are an elementary school teacher who can explain complex content to a level that a 7 or 8 year old child can understand. Please rewrite the following sentences to make them easier to understand:`
+
+This paragraph sets the context for the prompt, and it tells the AI what kind of content you are looking for. As a result, the AI-generated content is more likely to be appropriate for your needs.
+
+In addition to adding characters, you can also let the AI simulate a person. For example, you could have the AI rewrite the above paragraph in the style of David Foster Wallace.
+
+To do this, you would need to add a paragraph to the prompt that describes the style of David Foster Wallace. For example, you could say:
+
+`Imagine you are the famous writer David Foster Wallace. Please rewrite the following sentences in your own unique style.`
+
+By adding this paragraph, you are telling the AI what kind of content you are looking for. As a result, the AI-generated content is more likely to be in the style of David Foster Wallace.
+
+# Use special Symbols
+
+When you are summarizing or extracting information from text, you will often need to enter large paragraphs of text, or even multiple paragraphs of text. Here is a little trick that can help you improve the accuracy of AI feedback:
+
+- Use triple backticks (''') to separate instructions from text.
+- You can use other special characters like (\*), (/), (;), (#), (```), etc.
+
+For example, the following prompt is more effective than the one we wrote earlier:
+
+```
+Please summarize the following sentences to make them easier to understand.
+
+Text: '''
+OpenAI is an American artificial intelligence (AI) research laboratory consisting of the non-profit OpenAI Incorporated (OpenAI Inc.) and its for-profit subsidiary corporation OpenAI Limited Partnership (OpenAI LP). OpenAI conducts AI research with the declared intention of promoting and developing a friendly AI. OpenAI systems run on the fifth most powerful supercomputer in the world.[5][6][7] The organization was founded in San Francisco in 2015 by Sam Altman, Reid Hoffman, Jessica Livingston, Elon Musk, Ilya Sutskever, Peter Thiel and others,[8][1][9] who collectively pledged US$1 billion. Musk resigned from the board in 2018 but remained a donor. Microsoft provided OpenAI LP with a $1 billion investment in 2019 and a second multi-year investment in January 2023, reported to be $10 billion.[10]
+'''
+
+This is because the AI model knows that the instructions are between the triple backticks, and the text to be summarized is outside of the triple backticks. This makes it easier for the AI model to understand what you are asking it to do, and it can lead to more accurate results.
+
+This technique can be used in any AI product that allows users to input content and summarize the content. By using special symbols to separate instructions from text, you can improve the accuracy of AI feedback and get better results.
+```
