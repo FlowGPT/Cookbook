@@ -1,0 +1,65 @@
+# What is Prompt Engineering?
+
+Before explaining Prompt Engineering, let's first understand the term "prompt."
+
+In simple terms, a promptrefers to **instructions given to an AI model.**
+
+It can be a question, a textual description, or even a textual description with a set of parameters. Based on the provided prompt, the AI model generates corresponding text or even images.
+
+For example, when we input *What is the capital of China?* into ChatGPT, this question serves as the prompt.
+
+**Prompt:**
+```
+What is the capital of China?
+```
+
+**Output:**
+```
+The capital of China is Beijing.
+```
+
+Now, ****Prompt Engineering**** (abbreviated as **PE**) is as follows:
+
+>Prompt Engineering is an artificial intelligence (AI) technique that enhances AI performance by designing and refining AI prompts. The goal of Prompt Engineering is to create highly effective and controllable AI systems capable of accurately and reliably performing specific tasks.
+
+It may seem difficult to understand, so let me try to explain it differently.
+
+You might have used various AI-related products and thought that all you need to do is speak or type to get AI-generated answers. It may seem like there's no need for any technical knowledge.
+
+Indeed, if you only want AI to provide answers, you don't need to do anything extra apart from inputting text. However, if you want satisfactory or even precise answers, you need to employ the technique of PE.
+
+This is because human language, fundamentally, is imprecise, and current machine learning models struggle to comprehend human speech. That's why PE technology exists. Additionally, due to the current implementation of large language models, some logical operation problems require additional guidance for the AI (you don't need to delve deep into the reasons for now; just understand that it's an issue).
+
+Let's take an example. If we input the following sentence into ChatGPT:
+
+**Prompt:**
+```
+What is 100*100/400*56?
+```
+ChatGPT will return an incorrect answer, 0.4464 (Note: If you run the old version of the model API below, the answer should also be incorrect; the answer for the API version is 14):
+
+**Output:**
+```
+To solve this problem, we need to follow the order of operations, which is PEMDAS (parentheses, 
+exponents, multiplication/division, addition/subtraction). In this case, there are no parentheses 
+or exponents, so we perform multiplication and division from left to right before performing 
+addition and subtraction. 100*100/400*56 = (100*100)/(400*56) (Perform multiplication and division 
+from left to right) = 10,000/22,400 = 0.4464 (Divide 10,000 by 22,400). Therefore, 100100/40056 = 0.4464.
+```
+However, if we make some modifications to the prompt, the answer will be correct. Note: If you run the modified prompt with the old version of the model API below, the answer should still be incorrect, and Role Prompting is required to generate the correct answer (this will be explained in a subsequent section).
+
+**Prompt:**
+```
+What is (100*100)/400*56?
+```
+**Output:**
+```
+(100*100)/400*56 = (100*100/400)*56 (Perform multiplication and division from left to right, applying
+ the associative property of multiplication) = 25*56 = 1400 (Simplify by performing multiplication)
+```
+Furthermore, current AI products are still in their early stages, and due to various reasons, many restrictions have been imposed. If you want to bypass some limitations or harness the full potential of AI, Prompt Engineering techniques are also necessary. We will discuss this in subsequent sections.
+
+In summary, Prompt Engineering is an essential AI technique:
+
+- As an AI product user, you can utilize this technique to fully leverage the capabilities of AI products, enhancing your experience and improving work efficiency.
+- As a product designer or developer, you can employ Prompt Engineering to design and improve AI system prompts, enhancing the performance and accuracy of AI systems, and providing users with a better AI experience.

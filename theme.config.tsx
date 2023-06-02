@@ -6,7 +6,7 @@ import React from "react";
 const config = {
   logo: (
     <span>
-      <b>FlowGPT</b> Docs
+      <b>FlowGPT</b> Cookbook
     </span>
   ),
 
@@ -15,7 +15,7 @@ const config = {
   },
 
   footer: {
-    text: "FlowGPT Docs",
+    text: "FlowGPT",
   },
 
   useNextSeoProps() {

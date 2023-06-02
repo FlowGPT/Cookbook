@@ -1,0 +1,10 @@
+{
+    "1setting": "LLM settings",
+    "2few-shot": "Few-shot Prompting",
+    "3cot": "Chain of Thoughts Prompting",
+    "4self": "Self-Consistency",
+    "5pal": "PAL Model",
+    "6maki": "Paragraph Method by Maki"
+
+
+}

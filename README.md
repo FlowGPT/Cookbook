@@ -1,4 +1,4 @@
-# FlowGPT Docs
+# FlowGPT 
 
 This is Docs site for [**FlowGPT**](https://flowgpt.com).
 

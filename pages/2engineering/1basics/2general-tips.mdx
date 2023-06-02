@@ -1,0 +1,129 @@
+# General Tips for Designing Prompts
+
+When you're designing prompts for AI, you'll want to follow a few guidelines to ensure you get optimal results. Here are some crucial tips:
+
+### Start Simple
+
+The prompt design process is iterative and requires a lot of experimentation. Starting with simple prompts and gradually adding more elements and context often produces better results. Use playgrounds like OpenAI or Cohere as starting points, and remember that specificity, simplicity, and conciseness are key. If a task is complex, consider breaking it down into simpler subtasks.
+
+### Use the Latest Models
+
+If you're using AI products like ChatGPT or Midjourney, this may not be a concern for you. However, if you're using APIs or playgrounds like OpenAI, it's advisable to test with the latest models first.
+
+### Provide Complete Information in Your Prompts
+
+The more information you provide in your prompts, the better the results will be. For instance, if you're asking the AI to write a poem about OpenAI, specify the style, theme, and context for a better output.
+Less effective prompt:
+
+```other
+Write a poem about OpenAI.
+```
+
+The answer could be general, better prompt has more context:
+
+```other 
+
+Better prompt:
+
+```other
+Write a short inspiring poem about OpenAI, focusing on the recent DALL-E product launch (DALL-E is a text to image ML model) in the style of a {famous poet}
+```
+
+### Ensure Clarity and Reduce Ambiguity
+
+Your prompts should be simple, clear, and devoid of ambiguous language. For instance, instead of vaguely saying "not too much more", specify the exact number of sentences you want. While simplicity is important, it doesn't necessarily mean brevity. Your prompts can be long, as long as they are clear and comprehensive.
+
+By following these tips and embracing a lot of experimentation and iteration, you can optimize prompts for your applications and tasks, and significantly improve the quality of AI responses.
+
+### Provide Clear Instructions
+
+You can design effective prompts for various simple tasks by using commands to instruct the model what you want to achieve, such as "Write", "Classify", "Summarize", "Translate", "Order", etc. Experimentation is key to finding out what works best. Try different instructions with various keywords, contexts, and data. Remember, the more specific and relevant the context is to the task, the better. Separating the instruction and context with a clear separator like "###" can also be helpful.
+
+For instance:
+
+*Prompt:*
+```
+### Instruction ###
+Translate the text below to Spanish:
+
+Text: "hello!"
+```
+
+*Output:*
+```
+¡Hola!
+```
+
+### Specificity Matters
+
+Being specific about the task and instruction helps the model deliver better results. Especially when there's a desired outcome or style of generation, providing examples in the prompt can guide the model. However, avoid adding unnecessary details. The details should contribute to the task at hand.
+
+*Prompt:*
+```
+Extract the name of places in the following text. 
+
+Desired format:
+Place: <comma_separated_list_of_company_names>
+
+Input: "Although these developments are encouraging to researchers, much is still a mystery. “We often have a black box between the brain and the effect we see in the periphery,” says Henrique Veiga-Fernandes, a neuroimmunologist at the Champalimaud Centre for the Unknown in Lisbon. “If we want to use it in the therapeutic context, we actually need to understand the mechanism.""
+```
+
+*Output:*
+```
+Place: Champalimaud Centre for the Unknown, Lisbon
+```
+
+Input text is obtained from [this Nature article](https://www.nature.com/articles/d41586-023-00509-z).
+
+### Avoid Impreciseness
+
+While being detailed is crucial, you also need to avoid being too vague or clever with your prompts. Just like effective communication, being specific and direct helps deliver your message to the AI model more effectively.
+
+
+```
+Explain the concept prompt engineering. Keep the explanation short, only a few sentences, and don't be too descriptive.
+```
+
+It's not clear from the prompt above how many sentences to use and what style. You might still somewhat get good responses with the above prompts but the better prompt would be one that is very specific, concise, and to the point. Something like:
+
+```
+Use 2-3 sentences to explain the concept of prompt engineering to a high school student.
+```
+
+
+### Specify What to Do, Not What to Avoid
+
+When designing prompts, try to focus on what the AI should do rather than what it shouldn't do. This adds clarity and detail, ultimately leading to better responses from the model.
+
+Here is an example of a movie recommendation chatbot failing at exactly what I don't want it to do because of how I wrote the instruction -- focusing on what not to do.
+
+*Prompt:*
+```
+The following is an agent that recommends movies to a customer. DO NOT ASK FOR INTERESTS. DO NOT ASK FOR PERSONAL INFORMATION.
+
+Customer: Please recommend a movie based on my interests.
+Agent: 
+```
+
+*Output:*
+```
+Sure, I can recommend a movie based on your interests. What kind of movie would you like to watch? Do you prefer action, comedy, romance, or something else?
+```
+
+Here is a better prompt:
+
+*Prompt:*
+```
+The following is an agent that recommends movies to a customer. The agent is responsible to recommend a movie from the top global trending movies. It should refrain from asking users for their preferences and avoid asking for personal information. If the agent doesn't have a movie to recommend, it should respond "Sorry, couldn't find a movie to recommend today.".
+
+Customer: Please recommend a movie based on my interests.
+Agent:
+```
+
+*Output:*
+```
+Sorry, I don't have any information about your interests. However, here's a list of the top global trending movies right now: [list of movies]. I hope you find something you like!
+```
+
+Some of the examples above were adopted from the ["Best practices for prompt engineering with OpenAI API" article.](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api)
+
