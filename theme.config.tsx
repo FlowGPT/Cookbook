@@ -5,9 +5,17 @@ import React from "react";
 
 const config = {
   logo: (
-    <span>
+    <>
+    
+     <img
+       src="/favicon.ico"
+        alt="FlowGPT"
+        style={{ width: "24px", height: "24px", marginRight: "8px" }}
+      />
+    <span >
+     
       <b>FlowGPT</b> Cookbook
-    </span>
+    </span></>
   ),
 
   chat: {
@@ -25,7 +33,7 @@ const config = {
   },
 
   nextThemes: {
-    defaultTheme: "dark",
+    defaultTheme: "system",
   },
 
   banner: {
@@ -43,7 +51,13 @@ const config = {
 
   editLink: {
     text: null
-  }
+  },
+
+
+
+
+
+
 
    
 };

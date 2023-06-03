@@ -1,10 +1,10 @@
 {
   "index": "FlowGPT",
-  "1howto": "How To: Creation Guide",
-  "2engineering": "Prompt Engineering Guide",
-  "3usecase": "Use Case Guide",
-  "4support": "Support",
-  "5about": "About FlowGPT",
+  "howto": "How To: Creation Guide",
+  "engineering": "Prompt Engineering Guide",
+  "usecase": "Use Case Guide",
+  "support": "Support",
+  "about": "About FlowGPT",
 
   "contact": {
     "title": "Social Media Platforms",
