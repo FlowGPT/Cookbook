@@ -22,6 +22,10 @@ const config = {
     link: "https://discord.gg/EuYSg52q4Q",
   },
 
+   project: {
+    link: 'https://github.com/FlowGPT/guide'
+  },
+
   footer: {
     text: "FlowGPT",
   },
