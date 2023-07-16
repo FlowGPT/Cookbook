@@ -14,7 +14,7 @@ Replace "_______" with your own details or check out this prompt on FlowGPT.
 target="_blank" 
 href='https://flowgpt.com/prompt/3PPSxtneEECqzQZvB4vIS'> 
 <img 
-src="/promptCard/2.Prepare/pre1.png" alt="skill assessment" title="skill assessment" width="400" style={{borderRadius:"16px" }} />   
+![skill assessment](https://github.com/FlowGPT/Cookbook/blob/Boyuan-Deng-patch-1/public/promptCard/2.Prepare/pre1.png) alt="skill assessment" title="skill assessment" width="400" style={{borderRadius:"16px" }} />   
 </a>
 
 #### 2. Building Relevant Skills:
