@@ -13,7 +13,6 @@ Replace "_______" with your own details or check out this prompt on FlowGPT.
 <a 
 target="_blank" 
 href='https://flowgpt.com/prompt/3PPSxtneEECqzQZvB4vIS'> 
-<img 
 ![skill assessment](https://github.com/FlowGPT/Cookbook/blob/Boyuan-Deng-patch-1/public/promptCard/2.Prepare/pre1.png) 
 </a>
 
