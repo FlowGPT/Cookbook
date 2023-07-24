@@ -19,7 +19,7 @@ const config = {
   ),
 
   chat: {
-    link: "https://discord.gg/EuYSg52q4Q",
+    link: "https://discord.gg/flowgpt",
   },
 
    project: {
@@ -40,14 +40,14 @@ const config = {
     defaultTheme: "system",
   },
 
-  banner: {
-    key: "hackathon",
-    text: (
-      <a href="https://flowgpt.com/bounty" target="_blank">
-        🎉 FlowGPT Hackathon Season 2 is released. Join here →
-      </a>
-    ),
-  },
+  // banner: {
+  //   key: "hackathon",
+  //   text: (
+  //     <a href="https://flowgpt.com/bounty" target="_blank">
+  //       🎉 FlowGPT Hackathon Season 2 is released. Join here →
+  //     </a>
+  //   ),
+  // },
 
   feedback: {
     content: null
