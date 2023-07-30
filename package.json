@@ -7,11 +7,8 @@
     "build": "next build",
     "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/9maky/FlowGPTDocsSite"
-  },
-  "homepage": "https://github.com/9maky/FlowGPTDocsSite",
+
+
   "dependencies": {
     "next": "^13.0.6",
     "nextra": "latest",
