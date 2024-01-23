@@ -1,6 +1,6 @@
 {
-	"prompt": "Prompt",
-	"character": "Character",
-	"3collection": "Collection",
+	"create_prompt": "Prompt",
+	"create_character": "Character",
+	"features": "Features",
         "4dataset": "Dataset"
 }
