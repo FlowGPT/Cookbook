@@ -1,6 +1,6 @@
 {
-	"create_prompt": "Prompt",
-	"create_character": "Character",
-	"features": "Features",
-        "4dataset": "Dataset"
+  "create_prompt": "Prompt",
+  "create_character": "Character",
+  "features": "Features Tab",
+  "publish": "Publish Tab"
 }
