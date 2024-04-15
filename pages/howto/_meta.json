@@ -1,6 +1,4 @@
 {
-	"1prompt": "Prompt",
-	"2template": "Template",
-	"3collection": "Collection",
-        "4dataset": "Dataset"
+	"emochi": "Emochi (FlowGPT Mobile App)",
+	"web": "FlowGPT Web"
 }
