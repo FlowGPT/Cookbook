@@ -1,4 +1,4 @@
-# What is a Character Prompt?
+## What is a Character Prompt?
 In FlowGPT, a `Character` prompt is a prompt written for the express purpose of roleplay - it's structured in a way that instructs your chosen AI model to write as a character, and *stay* in-character.
 
 **![](https://lh7-us.googleusercontent.com/izx7btPxT7F7mx2O9373n5KDN9YfKESWL5QAEOfW1Azw6BxPEi3rEA_5HcYAZqCZcKOGHq6cRtX0icEd7r2kzOU8tC7nHZH6sMRgphmwBI-U67FNm_N73TIx9Kz9GOzs870CRlcz4BMD7eQqrNQhh_M)**
@@ -6,58 +6,60 @@ In FlowGPT, a `Character` prompt is a prompt written for the express purpose of 
 When creating a `Character` prompt, there are 4 boxes you must fill in: the `Name`, `Personality`, `Greeting`, and `Description`. You may also decide to fill in the 3 boxes underneath `Advanced Settings`: the `Scenario`, `Example Conversations`, and `System Message` boxes.
 
 This guide will teach you how to make use of all of them.
-# Creating Your First Character
+## Creating Your First Character
 To create a `Character` prompt, first click the `Create` button on the left sidebar.
 
-**![](https://lh7-us.googleusercontent.com/kJGR6uAK7UfMOHY2w8mJKGVkHeTyk9Uax59UPST53SGUjNI6m5hstAHq2S1bP0MjjHS9tjLWvfEzUkloIbmpRb3MsxLzPVyLGclMMQTBdVfUGjcMKahSP50RlUtfK2extqGBB7uG0ZCpGH4m33SOGrI)**
+**![](https://i.ibb.co/HxZzqrY/image-2024-06-21-014100593.png)**
 
-Then, select the `Character` tab at the top of the page.
+You will then be asked to select which type of prompt you'd like to make. Select `Character` and type in the name of your bot (don't worry, you can change this later!
 
-**![](https://lh7-us.googleusercontent.com/jlPFSZYGLxMgSbTbmNc8DxdbUvssIXpevpmDIl1lOxeCADSxEWTxJH7bZxtsHjCx60rCw994cY_VokwIaM-0sLzz0RZcDWX3g-S2Vh_s3SWvj95a5SadwyFCSvi85I6oxNV86DDBSaUGWgtBXIhYBw0)**
+**![](https://i.ibb.co/DVqwwws/image.png)**
 
-After confirming the `Convert Type` popup, you should see this screen:
+After hitting `Let's Start!`, you should see this screen:
 
-**![](https://lh7-us.googleusercontent.com/Wn_R7cNgY4ySnpVxMZEL0CiFPmw2iS-J-XepQy29IuI2WYGwFIPKiTcRx33VlrvIT8BvzvvRFcepeJyv2nyywFsVgkZLNouLrZjwMwh2biXsUgGa4Kd3VnJTb7vJClaIZOVh96A121el-9yzAxRS2So)**
+**![](https://i.ibb.co/WxPyWDS/image.png)**
 
 This is where you’ll be writing your character.
-## Basic Information
-As you can see, the first few boxes you need to fill out are the `Character Avatar`, the `Chat Background Customization`, and the `Name`.
+### AI Model
+As you can see, the first section (up at the top-right) is the AI Model.
 
-**![](https://lh7-us.googleusercontent.com/4wb3yol8JFRlFrK_-Bi2OQBw7SHbLeyuT515RRzEK__2dOvTicGOhw9fyDq_-9kCxzeB8D6Zt2yYu1liGtF-Gv4Mp81qii5QSNxv5OTs-hqKmb5HAtoIsT7NByE-Ebm1CrU4onO1JK7xok3R_azRAWk)**
+On FlowGPT, you are given 13 AI models to choose from - while most are free to use, a few require Flux to generate responses. These models are Google Gemini, GPT 3.5 Long, GPT-4 Turbo, Claude Instant and Claude V2.
 
-When choosing a `Character Avatar`, you are given the option to either upload your own photo, or choose a pre-made one from a selection of categories.
+Some models also prohibit sensitive content. These models include the ones listed above, as well as ChatGPT, Google Palm 2, and Claude V1.
 
-These categories are:
-* Realistic Male
-* Realistic Female
-* Anime Male
-* Anime Female
-* Cinematic Male
-* Cinematic Female
-* Non Human
+When selecting an AI model, it is also important to take note of their ‘context’. The model’s context limit is the limit on how much it can ‘remember’. Contexts are measured in ‘tokens’ - usually, groups of 3-4 letters (or many common words). To measure how many tokens are in your prompt (or simply visualise how they are calculated), you can visit [this tokeniser](https://gpt-tokenizer.dev/). In simple terms, a character (Personality, Scenario, Example Conversations, and System Message) should *not* exceed half of your chosen model’s maximum context. This is because the additional space will be used to store a user’s chat history with the character.
 
-**![](https://lh7-us.googleusercontent.com/3BcaOKUngQvAV0eW2GtSOxPk6ojuZ_KhbIja4M_VVE8xSomVhsirtEOB9gIFpCmbhiU_OoiM8eNE9kh5AKouiJ1MKfTTi4aHVjc3l7exVJuj7CovNd78hXwN51d_zi-GC1wZZ9F-3IsaKVsElDaHa1Q)**
+Additionally, you may notice the `Parameters` section upon selecting a model. These (apart from `Max Tokens`) influence how the AI 'chooses' which tokens to use when attempting to generate a response. While there are `Presets` already available for you to choose from, we encourage you to do some experimentation on your own to figure out which settings works best for you and your prompts. If you're confused on what any of the parameters do, you can hover over the exclamation marks for a quick explanation.
 
-If you choose to upload a photo, you are then given the option to crop the photo to your liking. **Make sure to crop both the Cover and the Avatar!**
+**![](https://i.ibb.co/X5Bbmtk/image.png)**
 
-**![](https://lh7-us.googleusercontent.com/CUntFspH4FyVo_KbteaPVzYkb6RxiH001_oKlk1BdCELWz9cYABLb7LlLqhoMpzwv0X_wg0nDtz1NQhMWGwVmyL-mgOb-QGefZ-zdcXryf9pfDPumiR9JKPkXx8MSg-y2M8SoFl02S_2Bt-2KkrT6cc)**
+### Avatar
+Next is the `Avatar` section.
 
-After selecting `Confirm`, your character’s avatar should replace the default one in the UI.
+**![](https://i.ibb.co/F61XV0v/image.png)**
 
-**![](https://lh7-us.googleusercontent.com/pCeVNOTgrS7mMjsUV4Y5BauihjFZbLHHpUILV5y8baRkhycvVLghcXsxem3aRJcHFK9BFY-wOXdwc2aKYFraOeCy24ersfmvOKf_DwAwHhBbzoaif49S72p3LYCR7Ia0B4qxWTTOCDb2fA3F4EvGFCA)**
+Here, you can choose to either `Generate` an avatar within FlowGPT's UI, or upload one yourself. While this tutorial will make use of an uploaded file, let's go over your options for generating an Avatar, anyway.
 
-For the `Chat Background Customization`, however, there are no pre-made images, and you must upload your own photo. Alternatively, you can choose to skip the chat background altogether, as it’s not a required element of the prompt.
+By selecting the `Generate` option (or selecting the `Avatar` tab on the left), you will be taken to the `Image Generation` section. Here, you can choose to spend 5 Flux to generate an image using 1 to 3 models in our Library, as shown below.
 
-Upon choosing a chat background, it will replace the default grey background in the `Preview`.
+**![](https://i.ibb.co/WKtSpgv/image.png)**
 
-**![](https://lh7-us.googleusercontent.com/hwHbakWm5DVLpqwrY5Hw6I98Y01QHXCuIXO_6hzRhMglOKFrO22DQJZZMxRhGdHU_R45Vp8IW3-EF17JeYcRk5pIBafPuCWeyV-1VB6rvvupsXxxCR1dTEul6NuCUp6sX-Qj0tuRH6EhtSfC4ainPec)**
+After selecting a model and typing in a prompt, hitting `Generate` will create 4 images for you to choose from. If none are to your liking, you can always choose to generate more images using either the same prompt, or a different one.
 
-After that, you can simply fill in your character’s name, and continue on to the `Personality` section.
+**![](https://i.ibb.co/fHv8Lkp/image.png)**
 
-**![](https://lh7-us.googleusercontent.com/LwokhNrQ837ZyCwoApnaG6-EEdh4RGaxYmcGPDjQxPluYNfBD9hKVzYbv9NG-TmU1DtmwaFp2PqZpQsZhe9k0fBMS2jAKL1eHTpnKZy1l5MNS5oW7_Ou8gi0I3CULdhDgqgZXgS4tFOawNw4tg3gKyk)**
-## Character Personality
+If one of the images catches your eye, you can then set the image as your character's `Avatar` by hovering over it, then clicking on the bookmark icon that pops up in the top-right corner of the image.
+
+From there, you will be prompted to crop the image to your liking, and after confirming your choice, the image will be set as your character's `Avatar`.
+
+**![](https://i.ibb.co/PmJgQCy/image.png)**
+
+**![](https://i.ibb.co/qpPpqTp/image.png)**
+
+Afterwards, you can go back to the `Definition` tab on the left side panel in order to return to your character's main information.
+### Character Personality
 The character’s personality can be one of the most difficult parts of a character prompt to write. Some use pseudo-code, others simply describe their character in prose. As such, this guide will be covering the most widely-used or widely-known formats.
-### W++
+#### W++
 Arguably one of the most popular formats on sites that centre around character prompts exclusively, W++ is a form of pseudo-code that was originally written for the Pygmalion 6B model. Nowadays, however, Pygmalion 6B is generally known to be ‘outdated’, and the limitations that were once on that model have become less restrictive in most widely-used models today. Simply-put, most models are now built differently.
 
 To begin with, W++ was written for Pygmalion 6B because, unlike most recent models, Pygmalion 6B struggled to ‘comprehend’ character information written in simple prose. Through experimentation, users found that *categorising* said information was much more effective, and was also simply easier to write than full paragraphs of prose.
@@ -73,7 +75,7 @@ As you can see, this format describes our character, Roderick, who is an anxious
 Note the use of brackets and quotation marks in particular: each category encompasses relevant traits, and each trait is encompassed by quotation marks and separated by plus signs. The `Personality` and `Mind` categories also contain the exact same information, reinforcing the character’s baseline personality traits for the AI.
 
 While the categorisation can be helpful for the ease of writing the prompt, the overuse of punctuation and duplication of information can also be a waste of tokens. There are better, more effective ways to convey this information, which is why W++ is usually not recommended for writing characters anymore.
-### Square Bracket Format
+#### Square Bracket Format
 While similar to W++ (and also developed for Pygmalion), Square Bracket Format (SBF) is a much more token-efficient method of categorising character traits.
 
 If we take our character information from the W++ format, we can convert it into SBF like so:
@@ -83,7 +85,7 @@ If we take our character information from the W++ format, we can convert it into
 As you can see, the extra brackets at the beginning and the end of the information block have been removed, as well as the quotation marks otherwise encompassing each trait. 
 
 In comparison to W++’s 204 tokens, SBF comes out at 153 tokens, despite containing, quite literally, the exact same information. Therefore, if categorising a character’s traits or saving on a character’s tokens is a must, SBF is one that is best suited for your prompt.
-### PList
+#### PList
 Similar to W++ and SBF, PList is a format that categorises a character’s traits. This time, however, it aims to mimic the structure of Python lists, hence the name.
 
 **![](https://lh7-us.googleusercontent.com/NL1jmunfpJ7QXI2IXzkHOgUba_pzyUb8IGydQ7__3Re5jHk4kbv9IWkBExwdBN5ZIcuugetBwtlKKnVqtg9QOcH-kLc2baXfKfzUUDyax2NScbqe0wFKTihaLTssMO4L2nmqkU9Ba_dABO42JYAH6VY)**
@@ -93,7 +95,7 @@ Similar to SBF, categories are encompassed by square brackets. *Unlike* SBF, how
 **![](https://lh7-us.googleusercontent.com/9WjtVlNmPudFKQoU0lZOmjYi7lL4dg-fIWC0-NigmdQ7GmGr0IF_Dn37WJ1ryguWqcHJsQ9n7BF8e0RZoqGw7XPLcxKrRIr3rs7AtiO47MJBh222vkNZFir_stTMxoL5a6ab2xRY1OifveBijis0De8)**
 
 Traits such as this would be difficult to keep in one sentence without the use of commas or additional punctuation.
-### Prose
+#### Prose
 One of the most universally-accepted formats is prose. Simply put, paragraphs and sentences, with no special symbols or brackets. This is also the format that would be effective for the most models - LLMs are mainly trained on *prose*, not code or forms of pseudocode (unless under different circumstances). Therefore, they *should* respond best to prompts that are similar to their training data - namely, paragraphs and sentences like so:
 
 **![](https://lh7-us.googleusercontent.com/0BYst5mDeadhZoRMLcRUk8sSSchYuYK2dB9IftWPM3Y0EGTEtPr1TJnyzRFD0bhUkA6f-uPxRGOuVdEuPb0FXqxZkRUYrBab2UNdkqZZLTgK410v4O9gflkAQoEz5DHQIvL56njUw1R1Yn26jw-v5kc)**
@@ -101,7 +103,7 @@ One of the most universally-accepted formats is prose. Simply put, paragraphs an
 When writing with prose, it is advised to reinforce important personality traits with a character’s past - for example, here’s a paragraph emphasising Rod’s romantic and empathetic traits:
 
 **![](https://lh7-us.googleusercontent.com/NC9wXjmEkj4v_0MxDgUIyRdxsL0COdCEd3SVwgm7Bi6SX1NUsTr2LRByN1KCj9Hn87G1irQvIExrpOcAbrLTP4DjAli5saymLmGSUydHqP-ZjLZ9_nTzFXipllm5qZlsuU721IMohfnbmYUVOXuEE1g)**
-Ali:Chat
+#### Ali:Chat
 Originally [written by .alicat](https://rentry.co/alichat) on Discord, the Ali:Chat format capitalises on the use of example dialogue to describe the character, while simultaneously reinforcing the character’s ‘voice’/speaking style. In short, the Ali:Chat format involves either the user character or an ‘interviewer’ character asking questions. For example:
 
 **![](https://lh7-us.googleusercontent.com/Wff7ycGOzzP52kr3fg3Ux9pPvrIxkjVZnp31eqFrc3eKYA0cchEUX77CAyijKqdC2KhwhponG1vDi_OPykNr3b_gJT2_PwgAEYbtoLyOQnjn-x3xgQw-cPFJCdQpRkDrwthkcrAIjpHk5deKVaFihQ4)**
@@ -110,13 +112,13 @@ These questions can range from the character’s personality, to their backstory
 
 As such, some choose to supplement the Ali:Chat format with shorter categorisation-type formats, such as SBF or PList.
 
-**![](https://lh7-us.googleusercontent.com/7JoIetEwjWuMZUcLOB6dn2ZD70CjqZtzJDYjJQ0Z5z6SYOp-bJsTCP-uMqmP-wNjP84gBE-UOaneFcRvwMlFnme0yUx1XxEwpn7PCzdjVxmHheCI2b33UMbeNJ6KObrSZeBacCXilDvX-yACaAAqSdA)**
+**![](https://i.ibb.co/pKmJ5VZ/image.png)**
 
-Once you have written your character’s personality, it’s time to write the character’s greeting.
-## Writing an Effective Greeting
-The character’s `Greeting` will be what starts off every chat that every user has with the character. It should set the scene, introduce the character, and tell the user what role they have in the story (if you’re setting their role for them).
+Once you have written your character’s personality, it’s time to write the character’s `Welcome Message`.
+### Writing an Effective Welcome Message
+The character’s `Welcome Message` will be what starts off every chat that every user has with the character. It should set the scene, introduce the character, and tell the user what role they have in the story (if you’re setting their role for them).
 
-The key to writing a good greeting is to *write what you want from the AI*. Since the `Greeting` is the very first message in the chat, the AI will be looking to that `Greeting` as an example of how to write. So, if you’re expecting very long messages from the AI with lots of detail in the scenery, the character’s perspective, etc, that’s what you’d write:
+The key to writing a good greeting is to *write what you want from the AI*. Since the `Welcome Message` is the very first message in the chat, the AI will be looking to that `Welcome Message` as an example of how to write. So, if you’re expecting very long messages from the AI with lots of detail in the scenery, the character’s perspective, etc, that’s what you’d write:
 
 **![](https://lh7-us.googleusercontent.com/xoVBN6PAHKyzlPSQyVanPzjlxT7uUHYZclomijv6ZD1MBT_9EQ5VYcx0dIo8Nff5AvpOnpp9ICmEUcgxtgt5Xj31tMjlCARYEh8lrO6p2_jGBNMzrzR2fLDnUKroAjC6lMBs01G6KUK0fFsQivHGuX8)**
 **![](https://lh7-us.googleusercontent.com/btkVpRYBIMkqt7atND72QmOowr-pFfPIhtfosMWD9RA8aKRMLJUOpEvF9fUzaR10APCJF5jzhQyBDJZbYf1GFNpPQnsRKShjzyV82KDyNM3VWFXMHTVhGrWvVYH-dYK30sdlj3_HdPBa3wUBkfA52Ek)**
@@ -125,118 +127,107 @@ Alternatively, you can also write shorter greetings for shorter subsequent messa
 
 **![](https://lh7-us.googleusercontent.com/IFL1Aoyog5GF_2Q4dJ-CHOfZg6eNBN7Xd5fz5owKWnPvOyoECfxsL9WrONyB4KK-zDSFkmRjAMvNnefEEO_fRCQv706Yax293gJsUY-t-JhIxBTuW8aQqVciW7i0D_PGMm4D6yE9eHirIvnWN-x-Hyc)**
 
-The `Greeting` is also often the source of the ‘My character keeps speaking for me!’ issue.
+The `Welcome Message` is also often the source of the ‘My character keeps speaking for me!’ issue.
 
 Here’s an example:
 
 **![](https://lh7-us.googleusercontent.com/Q1CyGRDijQyYXPXrRVG-t2ryqAkx66SregREAVT2K8jphqxY_ZtFGzRCmVWu2EWXbF9ksmI0hDMa9k4iogL4eq9tBibesUQ1WD_sZzIbJAN0MXg72bjuCrf-evxZHRgYAUE6bSWJ_cOzoUdzIXylMqU)**
 
-In this `Greeting`, the character takes a more *passive* role in the story. The first paragraph tells you (the user) what *you* think of the weather, why *you’re* inside the cafe, what *you* think of the situation. The only point at which the actual character (Rod) makes any action is in the next line, where he speaks to you.
+In this `Welcome Message`, the character takes a more *passive* role in the story. The first paragraph tells you (the user) what *you* think of the weather, why *you’re* inside the cafe, what *you* think of the situation. The only point at which the actual character (Rod) makes any action is in the next line, where he speaks to you.
 
-When a `Greeting` is written to focus on the *user’s* actions and backstory rather than the *character*, it encourages the AI to continue doing so - the AI will write as the *user* instead of the character, *or* it’ll write the actions of *both* characters instead:
+When a `Welcome Message` is written to focus on the *user’s* actions and backstory rather than the *character*, it encourages the AI to continue doing so - the AI will write as the *user* instead of the character, *or* it’ll write the actions of *both* characters instead:
 
 **![](https://lh7-us.googleusercontent.com/YU3jqOh8k_4iVT7fK5iT956CWb6jITI0hzsvCAS-A42_RjrfkZd5HJ07NJvuQfnATL-PHTbB00kvegvrVlSo6K1TvuA-jQLOZoYlOt6lXrlkazKi2TwJAmPBIRjpi3oZS0P5LelyyigcGW8f8wL8lSU)**
 **![](https://lh7-us.googleusercontent.com/djVHGHKJExuqbt8iY_jBy7v0YP0L9uw8yOgPVg06FMi55hpi7V_QPDAlR8111S-DdhTrO0uBEuyJVy6QrppK-iqr6x1ZzoEckh6TROTVH58Elpwsrot-9wAJhmwqlOPN12lBo-UoWkcVGDQDa-9uUxc)**
 
-An effective `Greeting` would focus entirely on the character themselves - actions made by the user should be minimal or non-existent, and if the user already has a role in the story (in this case, the user is the barista that Rod is in love with), that role should be explained from the perspective of the character:
+An effective `Welcome Message` would focus entirely on the character themselves - actions made by the user should be minimal or non-existent, and if the user already has a role in the story (in this case, the user is the barista that Rod is in love with), that role should be explained from the perspective of the character:
 
 **![](https://lh7-us.googleusercontent.com/PecPh1-C7QPVGNFz3VHllHh1IczsPpyi1oBrEfga9wHv4bLlf3yEJ_IGYoW05GXY4E2XzZAwSZy2nw6jspqyymegT5KmCVbXvs0Wg8bQhJLkztMKphbat9ADRbUuI-6xaSDyFQ-S8JECTIhDGDOHL7Q)**
 
-In this example, the Greeting accomplishes all three tasks: it sets the scene (inside a cafe), introduces the character (a regular customer at the cafe), and describes the user’s role (an overworked barista that the character is in love with).
+In this example, the `Welcome Message` accomplishes all three tasks: it sets the scene (inside a cafe), introduces the character (a regular customer at the cafe), and describes the user’s role (an overworked barista that the character is in love with).
 
-**![](https://lh7-us.googleusercontent.com/YgX5K8EH5q2H6dOZVhSpRZb6b73ExEWc5RBRrA0jJ-cUuK6MiDJfYN1g0ogqzGmz0q26mbuoKnB4-FoHmie9rODL6RUd1UXZBhJEdDmI_O8ymeIC3EVxQ4Nf-CIrv3GnF1GTVNF2IfMmYhk_GxBj1tI)**
+**![](https://i.ibb.co/LvFMMWq/image.png)**
 
-Once you have a `Greeting` written down, the next section is the `Suggested Questions`.
-## Suggested Questions
-While labelled as `Suggested Questions`, it would be easier to think of them as ‘conversation starters’. What’s something the user could say to start off the roleplay?
-
-Using the `Auto Fill` option will automatically generate some ‘conversation starters’ based on the character’s `Name`, `Personality`, and `Greeting`:
-
-**![](https://lh7-us.googleusercontent.com/K8pQyqg2q2r5nswVXJ4ccE6n-KYCYqk_l7riGyWnnFaUymiNsPJSf4989cCSdPizvP2rWsPuFjBBwgI6HcG8Uzqb9fJYn_fjJdbzX1KTQ-v4r8BRxeezEuHJfoleFPwbkN3ZWnWtQGy3lahJbdMTCsE)**
-
-Alternatively, you can just write your own, or leave the section empty, as it’s not a required part of character creation.
-
-Also, please note that longer `Suggested Questions` may be cut off on smaller screens, as shown in the preview:
-
-**![](https://lh7-us.googleusercontent.com/b3C_WyQaV5aWnZgrYT_Z5J0K9MlYop2ZstEEkegVgeVcG-MErSVlTKLjQKUPad2oxgLlFfYbtP31zCthPjW6ik3Ke6SNT8V94HuO1e0IB9Y6q5wGHQX9MRU9yvaRzDlIxYvuy-ir3tdILT5rw_2myHc)**
-## Character Descriptions
-The `Description` is the only section in the `Create` tab that will *not* be included in the context sent to the AI. It is meant for the user only - therefore, it’s a good way to provide extra context that might not have fit into the character’s `Greeting`, or to inform the user of more technical details, such as the intended tone of a roleplay with the character or the default model the character is using.
-
-**![](https://lh7-us.googleusercontent.com/_6x2GjFp57mN3X0cIVbf1B1v22YkgITpIEsS7cbz2m_BTG9XFmOFA8GAsBeNjbi-3dZWlGKcIqGQSC_zEN2S8s6z_BhQHLXuCu1mql2Zptguy0e-li4_-WauY7BhBW7FwkaDiuKypAUInRLCkjrmLy0)**
-## AI Model
-On FlowGPT, you are given 14 AI models to choose from - while most are free to use, a few require Flux to generate responses. These models are ChatGPT Long, GPT-4 Turbo, Claude Instant and Claude V2.
-
-Some models also prohibit sensitive content. These models include the ones listed above, as well as ChatGPT, Google Palm 2, and Google Gemini.
-
-When selecting an AI model, it is also important to take note of their ‘context’. The model’s context limit is the limit on how much it can ‘remember’. Contexts are measured in ‘tokens’ - usually, groups of 3-4 letters (or many common words). To measure how many tokens are in your prompt (or simply visualise how they are calculated), you can visit [this tokeniser](https://gpt-tokenizer.dev/). In simple terms, a character (Personality, Scenario, Example Conversations, and System Message) should *not* exceed half of your chosen model’s maximum context. This is because the additional space will be used to store a user’s chat history with the character.
-
-**![](https://lh7-us.googleusercontent.com/NqdOCr8na1p3z6u9V6tURUjuVnOrVd44O-bWbRZTSRDpEmo_uq7Sm_nQTH8JwqLNrzAmNsKZhYcsENfGRkHurBNwA4hJFmIlMCd1umNpQFEcPsF5bABCr8lMvTn46Bt4t3oHiEn_orThy4QaH9Xkow0)** **![](https://lh7-us.googleusercontent.com/XtFAm-trs6YMAPR127Z6qv62DI4MUWmJzuNLc37dvjtROHIEe3pTd_dpZcVPS0mYanX5yDDlVNAEc3-efCl5UVG5mhriMOomeVtDhTyMtkM0KMeKnWdsZ-VTt7WfAEPgMp_3Dcz4V0O3bJnkRW8Uz30)**
-## Advanced Character Details
-### Scenario
-The Scenario is where you can set the scene and/or introduce the user and the character to the AI, if it’s not already done so in the character’s `Greeting` or `Personality`. However, since it’s a permanent section in the context, it’s generally *not* recommended to include the *current* circumstances. For example, a roleplay with the example character, Rod, may *start* at the cafe in the middle of the user’s shift. However, if the roleplay continues for long enough, the plot may develop and that setting may *change* - the user’s shift might end, and they would then *leave* the cafe to go home.
+Once you have a `Welcome Message` written down, the next section is the `Advanced Character Settings`.
+### Advanced Character Settings
+#### Scenario
+The Scenario is where you can set the scene and/or introduce the user and the character to the AI, if it’s not already done so in the character’s `Welcome Message` or `Personality`. However, since it’s a permanent section in the context, it’s generally *not* recommended to include the *current* circumstances. For example, a roleplay with the example character, Rod, may *start* at the cafe in the middle of the user’s shift. However, if the roleplay continues for long enough, the plot may develop and that setting may *change* - the user’s shift might end, and they would then *leave* the cafe to go home.
 
 As such, the best practice is often to either provide minimal information in the `Scenario`, or leave it empty altogether.
 
-**![](https://lh7-us.googleusercontent.com/z_XfMLNPRFixJrU1UbWnkgz-T3AoWJBOCH2x6XbLdF46ExlEucEkflDfrf-Sd3MQU5gZCvsFNakhGGL9z1IaIgUD_vtQbhWh8MXk7Qdpg8y80vXcZFtBPFxq6nv7pqd1z_r3dxUb-zb-iiGEPvxdn9U)**
-### Example Conversations
+**![](https://i.ibb.co/dfrYr7R/image.png)**
+#### Example Conversations
 `Example Conversations` function similarly to a character’s `Greeting` - they help shape the ‘voice’ of a character (writing style, response length, etc), but with much less influence. While it’s helpful for the AI to ‘learn’ how the character speaks through these examples, it usually results in the AI mistaking these examples as ‘memories’ - for example, if one of the examples involves the character having a conversation with the user, the AI may *ignore* smaller anecdotes about the character and the user having never spoken to each other before, simply because that conversation is already in the context.
 
-The `Example Conversations` are also permanently placed in the context - as such, it can be a waste of tokens to include them when they don’t already expand upon the character or their personality, especially since the character’s `Greeting` exerts much more influence on the writing style the AI adopts for the roleplay.
+The `Example Conversations` are also permanently placed in the context - as such, it can be a waste of tokens to include them when they don’t already expand upon the character or their personality, especially since the character’s `Welcome Message` exerts much more influence on the writing style the AI adopts for the roleplay.
 
 As such, if you’re going to include `Example Conversations` in your character, the best practice may be to adopt the Ali:Chat format outlined above - that being, to only include examples that expand on otherwise complicated or overlooked traits in the character’s `Personality`.
 
 **![](https://lh7-us.googleusercontent.com/lOSpbaQSJbbqlqIC9LeBIQlnCu5zI-RIhJ6y9Bi6Jya3XaN92CFI2qwr_Nao3Ja9UGMlSv7YQBDGwOO8xb1df5UytY-aYREBLtdzfU7kGVdPBzeobela1kdGnJ7ZEXMM8DUJxy6caSY16zN9baw6-Fw)**
-### System Message
+#### Background Story
+If you didn't already include your character's backstory in the `Personality` section, you can do it here.
+
+**![](https://i.ibb.co/3rjyCsk/image.png)**
+
+As mentioned above, it's important to tie a character's personality traits to their background in order for them to shine through in their chats. For example, it's much easier for the AI to 'recall' a character's fear of dogs if you mention that they were once bitten by a dog as a child. The more detail to add into that memory and to how it affects your character in the present, the more likely it is to be referenced.
+
+Since our character's past was already detailed in the `Personality` section, however, we'll leave this box empty.
+#### System Message
 The `System Message`, despite not being a requirement, is one of the most important parts of creating a character.
 
 Most models rely on instructions from users in order to roleplay - they must be told *what* to do, and *how* to do it. Providing examples and describing the character may not be enough if the AI isn’t told what to do with it. As a result, the `System Message` section is provided, for you to write what you expect from the AI, or use one of the defaults provided to you.
 
-**![](https://lh7-us.googleusercontent.com/KtqET8fKeNpN4pRa80dDA5j1-O8t2LY6KNanT6VEIDF0qHRHecNuhvYyIBQueQ63nEuasfV2N2oT9z6sDyG7BKYepIXZKNrOVa2f4K18dUzHAFkHxRc9Wf707HAv0MuV63ojfntWJ7SJY6L3kJj1LC8)**
-# Testing
+**![](https://i.ibb.co/tD9ssb5/image.png)**
+### Testing
 When all of the required sections of your character are filled out and you’ve chosen an AI model, it’s time to test them!
 
-Using the `Preview` sidebar, you can chat with the character and see how they respond, just like a normal chat. Some things you may want to keep an eye out for include user impersonation (either rewrite your `Greeting` or instruct the model to avoid speaking as/for the user in the` System Message`), random perspective changes (often a problem with different perspectives used in the `Greeting` vs the `Personality`) or incorrect details (in terms of appearance for example, usually it’s not reinforced in the `Personality`/`Greeting`/`Example Conversations` enough for the AI to consider it relevant. Usually iterating that info once or twice would fix that issue, but the AI may still make mistakes due to the random nature or response generation).
+Using the `Preview` sidebar, you can chat with the character and see how they respond, just like a normal chat. Some things you may want to keep an eye out for include user impersonation (either rewrite your `Welcome Message` or instruct the model to avoid speaking as/for the user in the `System Message`), random perspective changes (often a problem with different perspectives used in the `Welcome Message` vs the `Personality`) or incorrect details (in terms of appearance for example, usually it’s not reinforced in the `Personality`/`Welcome Message`/`Example Conversations` enough for the AI to consider it relevant. Usually iterating that info once or twice would fix that issue, but the AI may still make mistakes due to the random nature of response generation).
 
-**![](https://lh7-us.googleusercontent.com/ts1bB9fmAPO9sr6SyR9jKRZ5DdAT4mOgcVuoFDzpUos6lAhVw-dM4ce2bo9eHI43UgjgMvnvAMfPpggG9a_wjSGUJCc1ZFPNl0EUxkmvhqPOmF-XzP_WEtNOXCPOhsZgnGLMHZdgDXV_ORnHsvKEjKc)**
-# Extra Features
-In the `Features` tab, you can give your character extra permissions. These include `Image Generation` (usually triggered by sending a response with the words ‘Generate an image of…’ to the character), `Voice Generation` (in which parts of a response encased by quotation marks “like this” will be read out by an AI voice of your choosing), or `Code Interpreter` (in which users can submit code to your character, which is interpreted by GPT-4 Turbo).
+**![](https://i.ibb.co/L0DWLHq/image.png)**
+## Extra Features
+Although we already looked at the `Avatar` tab earlier, it should be noted that there's an extra section at the bottom, below our model library.
 
-**![](https://lh7-us.googleusercontent.com/PT82ncMyjQ_RDwsx75ihNWUcq0UT37ahCS9c7RwkVuaE5qaR5mwgNYB1BoYBZqyg4gJCKqmcKzH4g_PPw6fKrbz_mdn5LPzw8oJ--mPI-fL9OesRfkfNwSrh-U4LLgIx_JS7iEMU5qBUudMP6iQ8VHo)**
-# Publishing a Character
-The `Publish` section is the last in the character creator. Here, you can choose how your character will appear to other people, and how they can find it.
+**![](https://i.ibb.co/Z87pPLR/image.png)**
 
-**![](https://lh7-us.googleusercontent.com/RnUgNv5FszWOMIbrwLInNzAAFVVeu2Bnr-iI9D3t1SaMo6NmiiyuBmelBqQs4MTnEoOwHHqo96rsvF0kAQq6kIZAPL8W47qSFK_fSP8GGtziMD1STtm8LY0eb24InWJorA_3lPUTUCLUL8GaGZPabYc)**
-## Character Preview
+Here, you can enable `Image Generation` for your character - this means that they can generate images for your users as they chat with them. You can also set a prefix for your images - for example, setting a style in order to keep those images consistent, or detailing your character's appearance in order to ensure that they appear in every image with the correct details.
+
+Additionally, the `Voice` tab allows you to choose a voice for your character, allowing any text generated within quotation marks (`"`) to be read out by your chosen voice.
+
+**![](https://i.ibb.co/DzRbzv2/image.png)**
+
+## Publishing a Character
+The `Publish` section is the last in the Create Center. Here, you can choose how your character will appear to other people, and how they can find it.
+
+**![](https://i.ibb.co/qntMmnB/image.png)**
+### Preview
 The `Preview` section shows how your character will appear on your profile or on the front page of FlowGPT. Clicking on the icon will show you the character’s main page, although none of the character’s details will be updated (apart from the avatar images) until you save by hitting the `Publish` button.
 
-**![](https://lh7-us.googleusercontent.com/q_5s_EJ0-6krz43Kv7_hbRO7u7BduCwx1MtMaVqh3JCBbatE2d7AEw7vIvNhXlslRmQ0RLmfbWPoT7m8GPVomfqzxA3fDj4A-E2IIgobaxDwuluOPzeJxK5lL5p4xp2ZD9yGPm2rh_6jQUcYEJteJl8)****![](https://lh7-us.googleusercontent.com/InzIKQrxfNbxliS1EY0bdyB7tZ8wVTsrU_lQ4HGnTNu_7rMxN1TdQBi7hekn1iMeb_OQKxWfBeuLTuQz6FFHc90sn8KTf5kiUnfmel5kZhrsANhQT9aER2L-xpbuhOm-6UFOSVqhylrOKVls3GLhk20)**
-## Example Conversation Preview
-The `Example Conversation` can be important for showing users what your character is like, and how they can interact with them. Please note that this section is a requirement, and if one is not provided or generated, the current `Preview` chat (in the right sidebar) will be used instead, and posted publicly!
+**![](https://i.ibb.co/gFndYk6/image.png)**
+**![](https://lh7-us.googleusercontent.com/InzIKQrxfNbxliS1EY0bdyB7tZ8wVTsrU_lQ4HGnTNu_7rMxN1TdQBi7hekn1iMeb_OQKxWfBeuLTuQz6FFHc90sn8KTf5kiUnfmel5kZhrsANhQT9aER2L-xpbuhOm-6UFOSVqhylrOKVls3GLhk20)**
+### Name and Intro
+If at any point you decided you wanted to change your character's `Name`, you can do so here. Below that is also the `Intro` section.
 
-The same thing will happen if you select the `Load Current Chat` option, but you can also choose `Auto Generate` to have one created for you.
+**![](https://i.ibb.co/db3J50q/image.png)**
 
-**![](https://lh7-us.googleusercontent.com/7pxmkRcfE9GLog9Ltq8GQZOG-n810zWOYJDJzBLLLsj36b1Tt8e6OpF3ZrakV6XcbqWtAbIFyPn6fkjnvWCFuQI61iiffv2U-ZcblE3oSLw8CQ1QT-AC_jt1NPAvHudj69sGcj9Kwga9cQ-mvUPrgj0)**
-## Category and Hashtag
-This is how most people will find your character. Select the `Category` that your character belongs in, then select whichever `Hashtags` would describe your character and/or their purpose.
+Note that the `Intro` section will *not* be included in the context sent to the AI. It is meant for the user only - therefore, it’s a good way to provide extra context that might not have fit into the character’s `Welcome Message`, or to inform the user of more technical details, such as the intended tone of a roleplay with the character or the default model the character is using.
+
+### Category, Category Tags, and Hashtags
+This is how most people will find your character. Select the `Category` that your character belongs in, fill in the `Category Tags`, then select whichever `Hashtags` would describe your character and/or their purpose. If you need to deselect any of the `Category Tags`, you can do so by selecting the tag again using the dropdown.
 
 Additionally, you may choose to enter your character into a `Bounty` - these are occasional competitions in which you can win prizes in Flux or cash.
 
-**![](https://lh7-us.googleusercontent.com/IB992EUk1zFpsFjEXAgg5zQJUeQeBSgHAheOpvtqaaD8jt6vSQ9KRq-wk7z2h0YPnaXP7JNx4oxxiGLSRLCR9PVRZwEbYd3TiRfzmjXcEu45mLh9Tm4xSa15bcQZA7CvgGDt_fKMU8ALU26FgZIWRH4)**
-## Sensitive Content and Permissions
+**![](https://i.ibb.co/gwBGKLr/image.png)**
+### Sensitive Content and Permissions
 If your character contains `Sensitive Content` (violence, sexual themes, jailbreaks, etc), make sure to declare it in the option below. If your character is miscategorised, it may result in a content ban.
 
 Additionally, this is where you can set the permissions for others interacting with your character.
 
-The first checkbox (`Allow community to find and chat with the AI`) will make your character private if unchecked. This means that, while still visible to *you* on your profile (and when *you* visit your public profile while logged in), *other* users cannot, unless you’ve given them a link to the character.
+The first checkbox (`Publically available to all users`) will make your character private if unchecked. This means that, while still visible to *you* on your profile (and when *you* visit your public profile while logged in), *other* users cannot, unless you’ve given them a link to the character.
 
-The second checkbox (`Allow community to see the AI content`) will make your character’s information private if unchecked. This means that the only details about your character that other users will see is the information on the character’s `Preview` page, the character’s `Greeting`, their `Description`, and the `Example Conversation` you set on the `Publish` tab.
+The second checkbox (`Allow community to view bot definition and prompt`) will make your character’s information private if unchecked. This means that the only details about your character that other users will see is the information on the character’s `Preview` page, the character’s `Welcome Message`, and their `Intro` (unless you've given them a link).
 
-The third checkbox (`Allow user to edit AI responses for more tailored experience`), if left unchecked, disables other users’ option to edit the AI’s responses.
-
-The fourth checkbox (`Allow community to use this AI as a reference for AI creation`), when unchecked, disables the option for users to use your character as a template for creating their own (an option usually used for creating derivative works of the character).
-
-**![](https://lh7-us.googleusercontent.com/YjMVdxCHmWAe_wJqFIsehmRFEr0jQ4XymveLS_ZvIFL8F91y3HKb9U9Yl0bZyUt-rFZBp0__xKkAI_QvImz-Fxthucm_JIJTy7UD_9igyk9_Wn4bOljk9v1XkK-PzQ9A9eyJ0mYHZQ_WlzVXI3i-t1w)**
-# Conclusion
+**![](https://i.ibb.co/WcHbbs1/image.png)**
+## Conclusion
 Once you’ve finished filling out your character’s information and setting permissions, you can publish it and enjoy your chats/roleplays to your heart’s content.
 
 While this guide is intended for new users creating their first character, remember that all of the information here is just a recommendation! If there’s anything about your character that you’re not happy with, always be open to experimenting with new formats, system messages, etc.

@@ -1,0 +1,11 @@
+{
+	"1prompt": "What is a prompt?",
+    "2models": "Which AI model is the best?",
+	"3impersonating": "How do I stop my prompt from speaking for me?",
+	"4ad": "How can I advertise my prompts?",
+	"5format": "Which format is the best to use for my prompt?",
+	"6context": "Why does my prompt keep forgetting things?",
+	"7placeholder": "What do {{user}} and {{char}} mean?"
+    
+
+}
