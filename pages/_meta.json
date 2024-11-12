@@ -2,7 +2,7 @@
   "index": "Welcome",
   "howto": "How To: Creation Guide",
   "engineering": "Prompt Engineering Guide",
-  "flux": "Flux",
+  "mochi-and-flux": "Mochi & Flux",
   "usecase": "Use Case Guide",
   "support": "Support",
   "about": "About FlowGPT",
@@ -13,9 +13,4 @@
     "href": "https://linktr.ee/FlowGPT",
     "newWindow": true
   }
-
-
-
-
-  
 }

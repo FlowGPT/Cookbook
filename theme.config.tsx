@@ -6,24 +6,23 @@ import React from "react";
 const config = {
   logo: (
     <>
-    
-     <img
-       src="/favicon.ico"
+      <img
+        src="/favicon.ico"
         alt="FlowGPT"
         style={{ width: "24px", height: "24px", marginRight: "8px" }}
       />
-    <span >
-     
-      <b>FlowGPT</b> Cookbook
-    </span></>
+      <span>
+        <b>FlowGPT</b> Cookbook
+      </span>
+    </>
   ),
 
   chat: {
     link: "https://discord.gg/flowgpt",
   },
 
-   project: {
-    link: 'https://github.com/FlowGPT/guide'
+  project: {
+    link: "https://github.com/FlowGPT/guide",
   },
 
   footer: {
@@ -50,20 +49,12 @@ const config = {
   // },
 
   feedback: {
-    content: null
+    content: null,
   },
 
   editLink: {
-    text: null
+    text: null,
   },
-
-
-
-
-
-
-
-   
 };
 
 export default config;
