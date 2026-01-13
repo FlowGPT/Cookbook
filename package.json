@@ -1,7 +1,7 @@
 {
-  "name": "flowgpt-docs",
+  "name": "emochi-docs",
   "version": "0.1.0",
-  "description": "FlowGPT docs",
+  "description": "Emochi docs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
