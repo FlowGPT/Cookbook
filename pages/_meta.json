@@ -1,16 +1,6 @@
 {
   "index": "Welcome",
   "howto": "How To: Creation Guide",
-  "engineering": "Prompt Engineering Guide",
-  "mochi-and-flux": "Mochi & Flux",
-  "usecase": "Use Case Guide",
-  "support": "Support",
-  "about": "About FlowGPT",
-
-  "contact": {
-    "title": "Social Media Platforms",
-    "type": "page",
-    "href": "https://linktr.ee/FlowGPT",
-    "newWindow": true
-  }
+  "about-mochi": "About Mochi",
+  "support": "Support"
 }

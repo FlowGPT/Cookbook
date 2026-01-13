@@ -1,5 +1,6 @@
 {
-  "emochi": "Emochi (FlowGPT Mobile App)",
-  "web": "FlowGPT Web",
+  "index": "Introduction",
+  "quick-mode": "Quick Mode",
+  "expert-mode": "Expert Mode",
   "rules": "Creation Rules"
 }
