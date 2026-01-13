@@ -8,17 +8,17 @@ const config = {
     <>
       <img
         src="/favicon.ico"
-        alt="FlowGPT"
+        alt="Emochi"
         style={{ width: "24px", height: "24px", marginRight: "8px" }}
       />
       <span>
-        <b>FlowGPT</b> Cookbook
+        <b>Emochi</b> Cookbook
       </span>
     </>
   ),
 
   chat: {
-    link: "https://discord.gg/flowgpt",
+    link: "https://discord.gg/FbSdE2EnJe",
   },
 
   project: {
@@ -26,12 +26,12 @@ const config = {
   },
 
   footer: {
-    text: "FlowGPT",
+    text: "Emochi",
   },
 
   useNextSeoProps() {
     return {
-      titleTemplate: "%s – FlowGPT",
+      titleTemplate: "%s - Emochi",
     };
   },
 

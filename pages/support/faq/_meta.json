@@ -1,0 +1,6 @@
+{
+  "models": "Which AI model is the best?",
+  "impersonating": "How do I stop my prompt from speaking for me?",
+  "context": "Why does my prompt keep forgetting things?",
+  "placeholder": "What do {{user}} and {{char}} mean?"
+}
